@@ -5,4 +5,9 @@
   <p class="text-base font-light leading-relaxed mt-0 mb-4 text-purple-800 mt-2">
     This page styled with tailwind css framework
   </p>
+
+  <%= content_tag(:div, "", data: { controller: "counter" }) do %>
+    <%= render "layouts/counter_text" %>
+    <%= render "layouts/counter_button" %>
+  <% end %>
 </div>
